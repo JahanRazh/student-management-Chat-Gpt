@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => res.send("Student Management API running"));
-app.use("/students", studentRoutes);
+app.use("/api/students", studentRoutes);
 
 app.use(notFound);
 app.use(errorHandler);
